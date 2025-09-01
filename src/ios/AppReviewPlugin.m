@@ -41,7 +41,7 @@
 }
 
 - (NSString*)fetchTrackId:(NSString*)packageName {
-    NSString* lookupURL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?bundleId=%@", packageName];
+    NSString* lookupURL = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?country=gb&bundleId=%@", packageName];
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:lookupURL]];
     NSDictionary* lookup = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 
