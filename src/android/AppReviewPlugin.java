@@ -1,7 +1,9 @@
 package by.chemerisuk.cordova;
 
 import static com.google.android.gms.tasks.Tasks.await;
-import static by.chemerisuk.cordova.support.ExecutionThread.WORKER;
+//import static by.chemerisuk.cordova.support.ExecutionThread.WORKER;
+//To be compatible with cordova-support-android-plugin ~1.0.2
+import static by.chemerisuk.cordova.support.CordovaMethod.ExecutionThread.WORKER;
 
 import android.app.Activity;
 import android.content.Intent;
